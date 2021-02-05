@@ -1,0 +1,79 @@
+* {
+  -webkit-font-smoothing: antianalized;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+// colors token
+$color-primary: #c73030;
+$color-secondary: #ffffff;
+$color-background: #282828;
+$color-font: #eaeaea;
+
+// spaces tokens
+$small: 2.5vw;
+$medium: 5vw;
+$large: 10vw;
+
+// grid tokens
+// font tokens
+$font-family: "Courier New", Courier, monospace;
+$font-header: 2em;
+$font-subtext: 1.3em;
+$font-normal: 1em;
+
+body {
+  background-color: $color-background;
+  font-family: $font-family;
+  color: $color-font;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $small $medium;
+  position: fixed;
+  left: 0;
+  width: 100%;
+
+  &__logo {
+    font-size: $font-header;
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+
+  &__item {
+    margin-left: $small;
+  }
+}
+
+.form {
+  &__title {
+    font-size: $font-header;
+  }
+  &__subtitle {
+    font: $font-subtext;
+  }
+  &__name-label {
+  }
+  &__name-input {
+  }
+  &__email-label {
+  }
+  &__email-input {
+  }
+  &__chceckbox {
+  }
+  &__concent {
+  }
+}
